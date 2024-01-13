@@ -22,6 +22,7 @@ Partial Class register
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(register))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.CheckBox_Mpass = New System.Windows.Forms.CheckBox()
         Me.CheckBox_Upass = New System.Windows.Forms.CheckBox()
@@ -97,7 +98,7 @@ Partial Class register
         '
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(136, 538)
+        Me.Button1.Location = New System.Drawing.Point(136, 543)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(167, 31)
@@ -309,10 +310,12 @@ Partial Class register
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(135, 67)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(156, 125)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 48
         Me.PictureBox1.TabStop = False
         '
@@ -322,11 +325,11 @@ Partial Class register
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 19.8!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(64, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(308, 46)
+        Me.Label1.Size = New System.Drawing.Size(298, 45)
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "Registration Form"
         '
-        'Register
+        'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -360,7 +363,7 @@ Partial Class register
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Register"
+        Me.Name = "register"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
