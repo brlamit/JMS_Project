@@ -44,18 +44,18 @@ Partial Class itemaddform
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JMSDataSet = New JMS_Project.JMSDataSet()
+        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
+        Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SupplierNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SAddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SPhoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ItemNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QuantityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BuyDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JMSDataSet = New JMS_Project.JMSDataSet()
-        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,7 +96,7 @@ Partial Class itemaddform
         'txt_ItemID
         '
         Me.txt_ItemID.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_ItemID.Location = New System.Drawing.Point(189, 190)
+        Me.txt_ItemID.Location = New System.Drawing.Point(192, 42)
         Me.txt_ItemID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_ItemID.Name = "txt_ItemID"
         Me.txt_ItemID.Size = New System.Drawing.Size(250, 30)
@@ -105,7 +105,7 @@ Partial Class itemaddform
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(26, 190)
+        Me.Label9.Location = New System.Drawing.Point(29, 42)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(80, 28)
         Me.Label9.TabIndex = 19
@@ -189,7 +189,7 @@ Partial Class itemaddform
         'txt_supplierphone
         '
         Me.txt_supplierphone.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_supplierphone.Location = New System.Drawing.Point(189, 134)
+        Me.txt_supplierphone.Location = New System.Drawing.Point(192, 188)
         Me.txt_supplierphone.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_supplierphone.Name = "txt_supplierphone"
         Me.txt_supplierphone.Size = New System.Drawing.Size(250, 30)
@@ -198,7 +198,7 @@ Partial Class itemaddform
         'txt_supplieraddress
         '
         Me.txt_supplieraddress.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_supplieraddress.Location = New System.Drawing.Point(189, 86)
+        Me.txt_supplieraddress.Location = New System.Drawing.Point(192, 140)
         Me.txt_supplieraddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_supplieraddress.Name = "txt_supplieraddress"
         Me.txt_supplieraddress.Size = New System.Drawing.Size(250, 30)
@@ -207,7 +207,7 @@ Partial Class itemaddform
         'txt_suppliername
         '
         Me.txt_suppliername.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_suppliername.Location = New System.Drawing.Point(189, 38)
+        Me.txt_suppliername.Location = New System.Drawing.Point(192, 92)
         Me.txt_suppliername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_suppliername.Name = "txt_suppliername"
         Me.txt_suppliername.Size = New System.Drawing.Size(250, 30)
@@ -216,7 +216,7 @@ Partial Class itemaddform
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(26, 136)
+        Me.Label6.Location = New System.Drawing.Point(29, 190)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(109, 28)
         Me.Label6.TabIndex = 4
@@ -243,7 +243,7 @@ Partial Class itemaddform
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 88)
+        Me.Label3.Location = New System.Drawing.Point(29, 142)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 28)
         Me.Label3.TabIndex = 1
@@ -252,7 +252,7 @@ Partial Class itemaddform
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(26, 40)
+        Me.Label2.Location = New System.Drawing.Point(29, 94)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(147, 28)
         Me.Label2.TabIndex = 0
@@ -273,7 +273,7 @@ Partial Class itemaddform
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Info
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.SupplierNameDataGridViewTextBoxColumn, Me.SAddressDataGridViewTextBoxColumn, Me.SPhoneDataGridViewTextBoxColumn, Me.ItemIDDataGridViewTextBoxColumn, Me.ItemNameDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn, Me.RateDataGridViewTextBoxColumn, Me.TotalAmountDataGridViewTextBoxColumn, Me.BuyDateDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemIDDataGridViewTextBoxColumn, Me.SupplierNameDataGridViewTextBoxColumn, Me.SAddressDataGridViewTextBoxColumn, Me.SPhoneDataGridViewTextBoxColumn, Me.ItemNameDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn, Me.RateDataGridViewTextBoxColumn, Me.TotalAmountDataGridViewTextBoxColumn, Me.BuyDateDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.JunkDataBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(6, 7)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -282,6 +282,28 @@ Partial Class itemaddform
         Me.DataGridView1.RowTemplate.Height = 29
         Me.DataGridView1.Size = New System.Drawing.Size(1521, 306)
         Me.DataGridView1.TabIndex = 15
+        '
+        'JunkDataBindingSource
+        '
+        Me.JunkDataBindingSource.DataMember = "JunkData"
+        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet
+        '
+        'JMSDataSet
+        '
+        Me.JMSDataSet.DataSetName = "JMSDataSet"
+        Me.JMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'JunkDataTableAdapter
+        '
+        Me.JunkDataTableAdapter.ClearBeforeFill = True
+        '
+        'ItemIDDataGridViewTextBoxColumn
+        '
+        Me.ItemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID"
+        Me.ItemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID"
+        Me.ItemIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ItemIDDataGridViewTextBoxColumn.Name = "ItemIDDataGridViewTextBoxColumn"
+        Me.ItemIDDataGridViewTextBoxColumn.Width = 130
         '
         'SupplierNameDataGridViewTextBoxColumn
         '
@@ -306,14 +328,6 @@ Partial Class itemaddform
         Me.SPhoneDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.SPhoneDataGridViewTextBoxColumn.Name = "SPhoneDataGridViewTextBoxColumn"
         Me.SPhoneDataGridViewTextBoxColumn.Width = 150
-        '
-        'ItemIDDataGridViewTextBoxColumn
-        '
-        Me.ItemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID"
-        Me.ItemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID"
-        Me.ItemIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ItemIDDataGridViewTextBoxColumn.Name = "ItemIDDataGridViewTextBoxColumn"
-        Me.ItemIDDataGridViewTextBoxColumn.Width = 130
         '
         'ItemNameDataGridViewTextBoxColumn
         '
@@ -354,20 +368,6 @@ Partial Class itemaddform
         Me.BuyDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.BuyDateDataGridViewTextBoxColumn.Name = "BuyDateDataGridViewTextBoxColumn"
         Me.BuyDateDataGridViewTextBoxColumn.Width = 200
-        '
-        'JunkDataBindingSource
-        '
-        Me.JunkDataBindingSource.DataMember = "JunkData"
-        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet
-        '
-        'JMSDataSet
-        '
-        Me.JMSDataSet.DataSetName = "JMSDataSet"
-        Me.JMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'JunkDataTableAdapter
-        '
-        Me.JunkDataTableAdapter.ClearBeforeFill = True
         '
         'itemaddform
         '
@@ -416,10 +416,10 @@ Partial Class itemaddform
     Friend WithEvents JMSDataSet As JMSDataSet
     Friend WithEvents JunkDataBindingSource As BindingSource
     Friend WithEvents JunkDataTableAdapter As JMSDataSetTableAdapters.JunkDataTableAdapter
+    Friend WithEvents ItemIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents SupplierNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents SAddressDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents SPhoneDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ItemIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ItemNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents QuantityDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents RateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn

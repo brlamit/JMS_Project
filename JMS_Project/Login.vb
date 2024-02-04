@@ -55,6 +55,7 @@ Public Class login
                     Me.Hide()
                     Dim home As New Dashboard()
                     home.Show()
+
                 Else
                     MessageBox.Show("Authentication failed. Invalid username or password.")
                 End If

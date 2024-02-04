@@ -66,6 +66,10 @@ Public Class register
 
                 MessageBox.Show("Registration successful.")
                 ' Clear input fields
+                Me.Dispose()
+
+                login.Show()
+
                 ClearInputFields()
 
             Catch ex As Exception
