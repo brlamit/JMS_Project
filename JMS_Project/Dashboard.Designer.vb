@@ -25,12 +25,13 @@ Partial Class Dashboard
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_home = New System.Windows.Forms.Button()
+        Me.btn_about = New System.Windows.Forms.Button()
+        Me.btn_sellDetail = New System.Windows.Forms.Button()
+        Me.btn_sell = New System.Windows.Forms.Button()
+        Me.btn_inventory = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.btn_update = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -43,12 +44,13 @@ Partial Class Dashboard
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Button6)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btn_home)
+        Me.Panel1.Controls.Add(Me.btn_about)
+        Me.Panel1.Controls.Add(Me.btn_sellDetail)
+        Me.Panel1.Controls.Add(Me.btn_sell)
+        Me.Panel1.Controls.Add(Me.btn_inventory)
+        Me.Panel1.Controls.Add(Me.btn_delete)
+        Me.Panel1.Controls.Add(Me.btn_update)
         Me.Panel1.Controls.Add(Me.btn_add)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -70,86 +72,98 @@ Partial Class Dashboard
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "JUNKYARD " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MANAGEMENT" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SYSTEM"
         '
-        'Button1
+        'btn_home
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(53, 221)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(125, 43)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "HOME"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btn_home.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_home.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_home.Location = New System.Drawing.Point(53, 221)
+        Me.btn_home.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_home.Name = "btn_home"
+        Me.btn_home.Size = New System.Drawing.Size(147, 43)
+        Me.btn_home.TabIndex = 9
+        Me.btn_home.Text = "HOME"
+        Me.btn_home.UseVisualStyleBackColor = False
         '
-        'Button6
+        'btn_about
         '
-        Me.Button6.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button6.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button6.Location = New System.Drawing.Point(53, 618)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(125, 43)
-        Me.Button6.TabIndex = 8
-        Me.Button6.Text = "ABOUT"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.btn_about.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_about.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_about.Location = New System.Drawing.Point(53, 610)
+        Me.btn_about.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_about.Name = "btn_about"
+        Me.btn_about.Size = New System.Drawing.Size(147, 43)
+        Me.btn_about.TabIndex = 8
+        Me.btn_about.Text = "ABOUT"
+        Me.btn_about.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btn_sellDetail
         '
-        Me.Button5.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button5.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button5.Location = New System.Drawing.Point(53, 550)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(125, 43)
-        Me.Button5.TabIndex = 7
-        Me.Button5.Text = "SELL"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btn_sellDetail.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_sellDetail.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_sellDetail.Location = New System.Drawing.Point(53, 545)
+        Me.btn_sellDetail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_sellDetail.Name = "btn_sellDetail"
+        Me.btn_sellDetail.Size = New System.Drawing.Size(147, 50)
+        Me.btn_sellDetail.TabIndex = 7
+        Me.btn_sellDetail.Text = "SELL DETAILS"
+        Me.btn_sellDetail.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btn_sell
         '
-        Me.Button4.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button4.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button4.Location = New System.Drawing.Point(53, 486)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(125, 43)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "VIEW"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btn_sell.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_sell.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_sell.Location = New System.Drawing.Point(53, 433)
+        Me.btn_sell.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_sell.Name = "btn_sell"
+        Me.btn_sell.Size = New System.Drawing.Size(147, 43)
+        Me.btn_sell.TabIndex = 7
+        Me.btn_sell.Text = "SELL"
+        Me.btn_sell.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btn_inventory
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button3.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button3.Location = New System.Drawing.Point(53, 420)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(125, 43)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "DELETE"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btn_inventory.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_inventory.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_inventory.Location = New System.Drawing.Point(53, 486)
+        Me.btn_inventory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_inventory.Name = "btn_inventory"
+        Me.btn_inventory.Size = New System.Drawing.Size(147, 43)
+        Me.btn_inventory.TabIndex = 6
+        Me.btn_inventory.Text = "INVENTORY"
+        Me.btn_inventory.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btn_delete
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button2.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(53, 356)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(125, 43)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "UPDATE"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btn_delete.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_delete.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_delete.Location = New System.Drawing.Point(53, 378)
+        Me.btn_delete.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(147, 43)
+        Me.btn_delete.TabIndex = 5
+        Me.btn_delete.Text = "DELETE"
+        Me.btn_delete.UseVisualStyleBackColor = False
+        '
+        'btn_update
+        '
+        Me.btn_update.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_update.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btn_update.Location = New System.Drawing.Point(53, 326)
+        Me.btn_update.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.Size = New System.Drawing.Size(147, 43)
+        Me.btn_update.TabIndex = 4
+        Me.btn_update.Text = "UPDATE"
+        Me.btn_update.UseVisualStyleBackColor = False
         '
         'btn_add
         '
         Me.btn_add.BackColor = System.Drawing.Color.Gainsboro
         Me.btn_add.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.btn_add.Location = New System.Drawing.Point(53, 292)
+        Me.btn_add.Location = New System.Drawing.Point(53, 273)
         Me.btn_add.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_add.Name = "btn_add"
-        Me.btn_add.Size = New System.Drawing.Size(125, 43)
+        Me.btn_add.Size = New System.Drawing.Size(147, 43)
         Me.btn_add.TabIndex = 3
         Me.btn_add.Text = "ADD"
         Me.btn_add.UseVisualStyleBackColor = False
@@ -204,15 +218,16 @@ Partial Class Dashboard
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_home As Button
+    Friend WithEvents btn_about As Button
+    Friend WithEvents btn_sell As Button
+    Friend WithEvents btn_inventory As Button
+    Friend WithEvents btn_delete As Button
+    Friend WithEvents btn_update As Button
     Friend WithEvents btn_add As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label2 As Label
+    Friend WithEvents btn_sellDetail As Button
 End Class

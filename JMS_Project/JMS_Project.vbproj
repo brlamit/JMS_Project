@@ -88,10 +88,32 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="itemupdateform.Designer.vb">
+      <DependentUpon>itemupdateform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="itemupdateform.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ItemViewForm.Designer.vb">
       <DependentUpon>ItemViewForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ItemViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JMSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JMSDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SellDetailForm.Designer.vb">
+      <DependentUpon>SellDetailForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellDetailForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Startup.vb">
@@ -117,12 +139,6 @@
       <DependentUpon>ItemSellForm.vb</DependentUpon>
     </Compile>
     <Compile Include="ItemSellForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ItemUpdateForm.Designer.vb">
-      <DependentUpon>ItemUpdateForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ItemUpdateForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="JMSDataSet.Designer.vb">
@@ -166,8 +182,14 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="itemupdateform.resx">
+      <DependentUpon>itemupdateform.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ItemViewForm.resx">
       <DependentUpon>ItemViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellDetailForm.resx">
+      <DependentUpon>SellDetailForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.vb</DependentUpon>
@@ -180,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemSellForm.resx">
       <DependentUpon>ItemSellForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ItemUpdateForm.resx">
-      <DependentUpon>ItemUpdateForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -208,6 +227,28 @@
     </None>
     <None Include="JMSDataSet.xss">
       <DependentUpon>JMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet1.xsc">
+      <DependentUpon>JMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JMSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JMSDataSet1.xss">
+      <DependentUpon>JMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet2.xsc">
+      <DependentUpon>JMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JMSDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JMSDataSet2.xss">
+      <DependentUpon>JMSDataSet2.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

@@ -43,6 +43,7 @@ Public Class itemaddform
                         command.Parameters.AddWithValue("@Total_Amount", total)
                         command.ExecuteNonQuery()
                         MessageBox.Show("Data inserted successfully.")
+                        Me.JunkDataTableAdapter.Fill(Me.JMSDataSet.JunkData)
                         'Me.JunkDataableAdapter.Fill(Me.JMSDataSet.JunkData)
                     Else
                         MessageBox.Show("Invalid total amount entered. Total amount should be greater than or equal to 0.")
@@ -74,50 +75,50 @@ Public Class itemaddform
         DateTimePicker1.Value = DateTime.Now ' Reset the DateTimePicker
 
         ' Refresh the DataGridView
-        RefreshDataGridView1()
+        ' RefreshDataGridView1()
     End Sub
 
-    Private Sub RefreshDataGridView1()
-        Dim builder As New SqlConnectionStringBuilder(
-        "Server=AMIT\SQLEXPRESS;Database=JMS;Integrated Security=True;")
-        builder.TrustServerCertificate = True
+    'Private Sub RefreshDataGridView1()
+    '    Dim builder As New SqlConnectionStringBuilder(
+    '    "Server=AMIT\SQLEXPRESS;Database=JMS;Integrated Security=True;")
+    '    builder.TrustServerCertificate = True
 
-        Using connection As New SqlConnection(builder.ConnectionString)
-            Try
-                connection.Open()
+    '    Using connection As New SqlConnection(builder.ConnectionString)
+    '        Try
+    '            connection.Open()
 
-                ' Select data from the database
-                Dim selectQuery As String = "SELECT * FROM JunkData"
-                Using command As New SqlCommand(selectQuery, connection)
-                    Using reader As SqlDataReader = command.ExecuteReader()
-                        ' Assuming you have a DataGridView named dgvJunkData to display the data
-                        DataGridView1.Rows.Clear()
+    '            ' Select data from the database
+    '            Dim selectQuery As String = "SELECT * FROM JunkData"
+    '            Using command As New SqlCommand(selectQuery, connection)
+    '                Using reader As SqlDataReader = command.ExecuteReader()
+    '                    ' Assuming you have a DataGridView named dgvJunkData to display the data
+    '                    DataGridView1.Rows.Clear()
 
-                        While reader.Read()
-                            ' Retrieve data from the database
-                            Dim row As DataGridViewRow = New DataGridViewRow()
-                            row.CreateCells(DataGridView1)
-                            row.Cells(0).Value = reader("Supplier_Name")
-                            row.Cells(1).Value = reader("S_Address")
-                            row.Cells(2).Value = reader("S_Phone")
-                            row.Cells(3).Value = reader("Item_ID")
-                            row.Cells(4).Value = reader("Item_Name")
-                            row.Cells(5).Value = reader("Quantity")
-                            row.Cells(6).Value = reader("Rate")
-                            row.Cells(7).Value = reader("Buy_Date")
-                            row.Cells(8).Value = reader("Total_Amount")
+    '                    While reader.Read()
+    '                        ' Retrieve data from the database
+    '                        Dim row As DataGridViewRow = New DataGridViewRow()
+    '                        row.CreateCells(DataGridView1)
+    '                        row.Cells(0).Value = reader("Supplier_Name")
+    '                        row.Cells(1).Value = reader("S_Address")
+    '                        row.Cells(2).Value = reader("S_Phone")
+    '                        row.Cells(3).Value = reader("Item_ID")
+    '                        row.Cells(4).Value = reader("Item_Name")
+    '                        row.Cells(5).Value = reader("Quantity")
+    '                        row.Cells(6).Value = reader("Rate")
+    '                        row.Cells(7).Value = reader("Buy_Date")
+    '                        row.Cells(8).Value = reader("Total_Amount")
 
-                            DataGridView1.Rows.Add(row)
-                        End While
-                    End Using
-                End Using
-            Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
-            Finally
-                connection.Close()
-            End Try
-        End Using
-    End Sub
+    '                        DataGridView1.Rows.Add(row)
+    '                    End While
+    '                End Using
+    '            End Using
+    '        Catch ex As Exception
+    '            MessageBox.Show("Error: " & ex.Message)
+    '        Finally
+    '            connection.Close()
+    '        End Try
+    '    End Using
+    'End Sub
 
     Private Sub itemaddform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'JMSDataSet.JunkData' table. You can move, or remove it, as needed.
