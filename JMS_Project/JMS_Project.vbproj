@@ -110,6 +110,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JMSDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="JMSDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JMSDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JMSDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JMSDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SellDetailForm.Designer.vb">
       <DependentUpon>SellDetailForm.vb</DependentUpon>
     </Compile>
@@ -249,6 +264,39 @@
     </None>
     <None Include="JMSDataSet2.xss">
       <DependentUpon>JMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet3.xsc">
+      <DependentUpon>JMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JMSDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JMSDataSet3.xss">
+      <DependentUpon>JMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet4.xsc">
+      <DependentUpon>JMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JMSDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JMSDataSet4.xss">
+      <DependentUpon>JMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet5.xsc">
+      <DependentUpon>JMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="JMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JMSDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JMSDataSet5.xss">
+      <DependentUpon>JMSDataSet5.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

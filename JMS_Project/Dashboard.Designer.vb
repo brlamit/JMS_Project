@@ -88,7 +88,7 @@ Partial Class Dashboard
         '
         Me.btn_about.BackColor = System.Drawing.Color.Gainsboro
         Me.btn_about.Font = New System.Drawing.Font("Trebuchet MS", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.btn_about.Location = New System.Drawing.Point(53, 610)
+        Me.btn_about.Location = New System.Drawing.Point(53, 628)
         Me.btn_about.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_about.Name = "btn_about"
         Me.btn_about.Size = New System.Drawing.Size(147, 43)
@@ -103,7 +103,7 @@ Partial Class Dashboard
         Me.btn_sellDetail.Location = New System.Drawing.Point(53, 545)
         Me.btn_sellDetail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_sellDetail.Name = "btn_sellDetail"
-        Me.btn_sellDetail.Size = New System.Drawing.Size(147, 50)
+        Me.btn_sellDetail.Size = New System.Drawing.Size(147, 64)
         Me.btn_sellDetail.TabIndex = 7
         Me.btn_sellDetail.Text = "SELL DETAILS"
         Me.btn_sellDetail.UseVisualStyleBackColor = False
@@ -209,7 +209,7 @@ Partial Class Dashboard
         Me.Name = "Dashboard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Dashboard"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

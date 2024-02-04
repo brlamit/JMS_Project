@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class itemupdateform
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class itemupdateform
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -44,25 +44,23 @@ Partial Class itemupdateform
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
-        Me.JMSDataSet = New JMS_Project.JMSDataSet()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.JMSDataSet4 = New JMS_Project.JMSDataSet4()
         Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JunkDataBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSet4TableAdapters.JunkDataTableAdapter()
+        Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SupplierNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SAddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SPhoneDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QuantityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BuyDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.JMSDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JunkDataBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -283,118 +281,113 @@ Partial Class itemupdateform
         Me.Label27.TabIndex = 15
         Me.Label27.Text = " ITEMS UPDATE FORM"
         '
-        'JMSDataSet
+        'DataGridView1
         '
-        Me.JMSDataSet.DataSetName = "JMSDataSet"
-        Me.JMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Info
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemIDDataGridViewTextBoxColumn, Me.SupplierNameDataGridViewTextBoxColumn, Me.SAddressDataGridViewTextBoxColumn, Me.SPhoneDataGridViewTextBoxColumn, Me.ItemNameDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn, Me.RateDataGridViewTextBoxColumn, Me.TotalAmountDataGridViewTextBoxColumn, Me.BuyDateDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.JunkDataBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(6, 8)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 29
+        Me.DataGridView1.Size = New System.Drawing.Size(1521, 306)
+        Me.DataGridView1.TabIndex = 17
+        '
+        'JMSDataSet4
+        '
+        Me.JMSDataSet4.DataSetName = "JMSDataSet4"
+        Me.JMSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'JunkDataBindingSource
         '
         Me.JunkDataBindingSource.DataMember = "JunkData"
-        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet
+        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet4
         '
         'JunkDataTableAdapter
         '
         Me.JunkDataTableAdapter.ClearBeforeFill = True
         '
-        'DataGridView2
+        'ItemIDDataGridViewTextBoxColumn
         '
-        Me.DataGridView2.AutoGenerateColumns = False
-        Me.DataGridView2.BackgroundColor = System.Drawing.SystemColors.Info
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
-        Me.DataGridView2.DataSource = Me.JunkDataBindingSource1
-        Me.DataGridView2.Location = New System.Drawing.Point(6, 7)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.RowHeadersWidth = 51
-        Me.DataGridView2.RowTemplate.Height = 29
-        Me.DataGridView2.Size = New System.Drawing.Size(1521, 306)
-        Me.DataGridView2.TabIndex = 18
+        Me.ItemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID"
+        Me.ItemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID"
+        Me.ItemIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ItemIDDataGridViewTextBoxColumn.Name = "ItemIDDataGridViewTextBoxColumn"
+        Me.ItemIDDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn4
+        'SupplierNameDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Item_ID"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Item_ID"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 130
+        Me.SupplierNameDataGridViewTextBoxColumn.DataPropertyName = "Supplier_Name"
+        Me.SupplierNameDataGridViewTextBoxColumn.HeaderText = "Supplier_Name"
+        Me.SupplierNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.SupplierNameDataGridViewTextBoxColumn.Name = "SupplierNameDataGridViewTextBoxColumn"
+        Me.SupplierNameDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn1
+        'SAddressDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Supplier_Name"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Supplier_Name"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 200
+        Me.SAddressDataGridViewTextBoxColumn.DataPropertyName = "S_Address"
+        Me.SAddressDataGridViewTextBoxColumn.HeaderText = "S_Address"
+        Me.SAddressDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.SAddressDataGridViewTextBoxColumn.Name = "SAddressDataGridViewTextBoxColumn"
+        Me.SAddressDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn2
+        'SPhoneDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "S_Address"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "S_Address"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 200
+        Me.SPhoneDataGridViewTextBoxColumn.DataPropertyName = "S_Phone"
+        Me.SPhoneDataGridViewTextBoxColumn.HeaderText = "S_Phone"
+        Me.SPhoneDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.SPhoneDataGridViewTextBoxColumn.Name = "SPhoneDataGridViewTextBoxColumn"
+        Me.SPhoneDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn3
+        'ItemNameDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "S_Phone"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "S_Phone"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 150
+        Me.ItemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name"
+        Me.ItemNameDataGridViewTextBoxColumn.HeaderText = "Item_Name"
+        Me.ItemNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ItemNameDataGridViewTextBoxColumn.Name = "ItemNameDataGridViewTextBoxColumn"
+        Me.ItemNameDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn5
+        'QuantityDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Item_Name"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Item_Name"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 150
+        Me.QuantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity"
+        Me.QuantityDataGridViewTextBoxColumn.HeaderText = "Quantity"
+        Me.QuantityDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.QuantityDataGridViewTextBoxColumn.Name = "QuantityDataGridViewTextBoxColumn"
+        Me.QuantityDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn6
+        'RateDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Quantity"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Quantity"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 130
+        Me.RateDataGridViewTextBoxColumn.DataPropertyName = "Rate"
+        Me.RateDataGridViewTextBoxColumn.HeaderText = "Rate"
+        Me.RateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.RateDataGridViewTextBoxColumn.Name = "RateDataGridViewTextBoxColumn"
+        Me.RateDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn7
+        'TotalAmountDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Rate"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Rate"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 125
+        Me.TotalAmountDataGridViewTextBoxColumn.DataPropertyName = "Total_Amount"
+        Me.TotalAmountDataGridViewTextBoxColumn.HeaderText = "Total_Amount"
+        Me.TotalAmountDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.TotalAmountDataGridViewTextBoxColumn.Name = "TotalAmountDataGridViewTextBoxColumn"
+        Me.TotalAmountDataGridViewTextBoxColumn.Width = 125
         '
-        'DataGridViewTextBoxColumn8
+        'BuyDateDataGridViewTextBoxColumn
         '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Total_Amount"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Total_Amount"
-        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 180
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Buy_Date"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Buy_Date"
-        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Width = 200
-        '
-        'JunkDataBindingSource1
-        '
-        Me.JunkDataBindingSource1.DataMember = "JunkData"
-        Me.JunkDataBindingSource1.DataSource = Me.JMSDataSet
+        Me.BuyDateDataGridViewTextBoxColumn.DataPropertyName = "Buy_Date"
+        Me.BuyDateDataGridViewTextBoxColumn.HeaderText = "Buy_Date"
+        Me.BuyDateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.BuyDateDataGridViewTextBoxColumn.Name = "BuyDateDataGridViewTextBoxColumn"
+        Me.BuyDateDataGridViewTextBoxColumn.Width = 125
         '
         'itemupdateform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1532, 682)
-        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label27)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -404,10 +397,9 @@ Partial Class itemupdateform
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.JMSDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JunkDataBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -432,20 +424,19 @@ Partial Class itemupdateform
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label27 As Label
-    Friend WithEvents JMSDataSet As JMSDataSet
-    Friend WithEvents JunkDataBindingSource As BindingSource
-    Friend WithEvents JunkDataTableAdapter As JMSDataSetTableAdapters.JunkDataTableAdapter
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents JunkDataBindingSource1 As BindingSource
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents Label1 As Label
     Friend WithEvents btn_search As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents JMSDataSet4 As JMSDataSet4
+    Friend WithEvents JunkDataBindingSource As BindingSource
+    Friend WithEvents JunkDataTableAdapter As JMSDataSet4TableAdapters.JunkDataTableAdapter
+    Friend WithEvents ItemIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SupplierNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SAddressDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SPhoneDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ItemNameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents QuantityDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents RateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TotalAmountDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents BuyDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

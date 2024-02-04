@@ -63,15 +63,20 @@ Public Class ItemSellForm
     End Sub
 
 
-    Public Class Login
-        ' Assuming you have a shared property to store the username
-        Public Shared Property Username As String
-    End Class
+    'Public Class Login
+    '    ' Assuming you have a shared property to store the username
+    '    Public Shared Property Username As String
+    '    Public Shared Property SellerName As String
+    'End Class
     Private Function GetSellerName() As String
         ' Retrieve and return the seller's name from your login information
-        ' You need to implement this function based on your actual login system
-        ' For example, if you have a property named SellerName in your login form, you can return that value.
-        Return Login.Username
+        ' Assuming you have a shared property to store the username
+        If Not String.IsNullOrEmpty(Login.SellerName) Then
+            Return Login.SellerName
+            'Else
+            '    ' Handle the case where the username is empty or not set
+            '    Return "Unknown Seller"
+        End If
     End Function
     Private Sub ItemSellForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'JMSDataSet1.JunkData' table. You can move, or remove it, as needed.
@@ -255,5 +260,6 @@ Public Class ItemSellForm
         ' Calculate the total amount based on your logic
         Return Convert.ToInt32(txt_Squantity.Text) * Convert.ToDecimal(txt_Srate.Text)
     End Function
+
 
 End Class

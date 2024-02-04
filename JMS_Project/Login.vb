@@ -2,6 +2,9 @@
 Imports Microsoft.Data.SqlClient
 
 Public Class login
+    Public Shared Property Username As String
+    Public Shared Property SellerName As String
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Application.Exit()
     End Sub
@@ -51,6 +54,9 @@ Public Class login
 
                 ' If count is 1, the user is authenticated
                 If count = 1 Then
+                    login.Username = username
+
+                    login.SellerName = username
                     ' MessageBox.Show("Authentication successful!")
                     Me.Hide()
                     Dim home As New Dashboard()

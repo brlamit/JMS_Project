@@ -35,7 +35,6 @@ Partial Class ItemSellForm
         Me.txt_Srate = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_Squantity = New System.Windows.Forms.TextBox()
-        Me.btn_refresh = New System.Windows.Forms.Button()
         Me.btn_sell = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -94,7 +93,6 @@ Partial Class ItemSellForm
         Me.GroupBox5.Controls.Add(Me.txt_Srate)
         Me.GroupBox5.Controls.Add(Me.Label3)
         Me.GroupBox5.Controls.Add(Me.txt_Squantity)
-        Me.GroupBox5.Controls.Add(Me.btn_refresh)
         Me.GroupBox5.Controls.Add(Me.btn_sell)
         Me.GroupBox5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.GroupBox5.Location = New System.Drawing.Point(994, 373)
@@ -195,17 +193,6 @@ Partial Class ItemSellForm
         Me.txt_Squantity.Name = "txt_Squantity"
         Me.txt_Squantity.Size = New System.Drawing.Size(250, 30)
         Me.txt_Squantity.TabIndex = 19
-        '
-        'btn_refresh
-        '
-        Me.btn_refresh.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.btn_refresh.Location = New System.Drawing.Point(238, 259)
-        Me.btn_refresh.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btn_refresh.Name = "btn_refresh"
-        Me.btn_refresh.Size = New System.Drawing.Size(111, 35)
-        Me.btn_refresh.TabIndex = 17
-        Me.btn_refresh.Text = "Refresh"
-        Me.btn_refresh.UseVisualStyleBackColor = False
         '
         'btn_sell
         '
@@ -488,7 +475,6 @@ Partial Class ItemSellForm
 
     Friend WithEvents Label28 As Label
     Friend WithEvents GroupBox5 As GroupBox
-    Friend WithEvents btn_refresh As Button
     Friend WithEvents btn_sell As Button
     Friend WithEvents DataGridView5 As DataGridView
     Friend WithEvents txt_Ramount As TextBox

@@ -1,16 +1,14 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class itemupdateform
+    Private Sub itemupdateform_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'JMSDataSet4.JunkData' table. You can move, or remove it, as needed.
+        Me.JunkDataTableAdapter.Fill(Me.JMSDataSet4.JunkData)
+
+    End Sub
     Dim connection As New SqlConnection("Server=AMIT\SQLEXPRESS; Database=JMS; Integrated Security=true")
 
-    Private Sub itemupdateform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            ' Load data into the DataGridView
-            Me.JunkDataTableAdapter.Fill(Me.JMSDataSet.JunkData)
-        Catch ex As Exception
-            MessageBox.Show("Error loading data: " & ex.Message)
-        End Try
-    End Sub
+
 
     'Private Sub DataGridView2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellClick
     '    ' Handle the CellClick event to populate input fields with selected row's data
@@ -57,7 +55,7 @@ Public Class itemupdateform
                         MessageBox.Show("Data updated successfully.")
 
                         ' Refresh the DataGridView to reflect the changes
-                        Me.JunkDataTableAdapter.Fill(Me.JMSDataSet.JunkData)
+                        Me.JunkDataTableAdapter.Fill(Me.JMSDataSet4.JunkData)
                     End Using
                 End Using
             Else
@@ -137,4 +135,8 @@ Public Class itemupdateform
         ' Refresh the DataGridView
         ' RefreshDataGridView1()
     End Sub
+
+
+
+
 End Class
