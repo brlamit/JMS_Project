@@ -48,9 +48,9 @@ Partial Class startUp
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Label2.Location = New System.Drawing.Point(88, 212)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(370, 28)
+        Me.Label2.Size = New System.Drawing.Size(329, 28)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Developed && Design By: HashTech Hub"
+        Me.Label2.Text = "Developed && Design By: JMS Team"
         '
         'Label1
         '

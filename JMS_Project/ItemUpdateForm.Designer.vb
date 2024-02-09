@@ -45,9 +45,6 @@ Partial Class itemupdateform
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.JMSDataSet4 = New JMS_Project.JMSDataSet4()
-        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSet4TableAdapters.JunkDataTableAdapter()
         Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SupplierNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SAddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,10 +54,13 @@ Partial Class itemupdateform
         Me.RateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BuyDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JMSDataSet4 = New JMS_Project.JMSDataSet4()
+        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSet4TableAdapters.JunkDataTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -296,20 +296,6 @@ Partial Class itemupdateform
         Me.DataGridView1.Size = New System.Drawing.Size(1521, 306)
         Me.DataGridView1.TabIndex = 17
         '
-        'JMSDataSet4
-        '
-        Me.JMSDataSet4.DataSetName = "JMSDataSet4"
-        Me.JMSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'JunkDataBindingSource
-        '
-        Me.JunkDataBindingSource.DataMember = "JunkData"
-        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet4
-        '
-        'JunkDataTableAdapter
-        '
-        Me.JunkDataTableAdapter.ClearBeforeFill = True
-        '
         'ItemIDDataGridViewTextBoxColumn
         '
         Me.ItemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID"
@@ -382,11 +368,25 @@ Partial Class itemupdateform
         Me.BuyDateDataGridViewTextBoxColumn.Name = "BuyDateDataGridViewTextBoxColumn"
         Me.BuyDateDataGridViewTextBoxColumn.Width = 125
         '
+        'JunkDataBindingSource
+        '
+        Me.JunkDataBindingSource.DataMember = "JunkData"
+        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet4
+        '
+        'JMSDataSet4
+        '
+        Me.JMSDataSet4.DataSetName = "JMSDataSet4"
+        Me.JMSDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'JunkDataTableAdapter
+        '
+        Me.JunkDataTableAdapter.ClearBeforeFill = True
+        '
         'itemupdateform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1532, 682)
+        Me.ClientSize = New System.Drawing.Size(1528, 723)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label27)
@@ -398,8 +398,8 @@ Partial Class itemupdateform
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JMSDataSet4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

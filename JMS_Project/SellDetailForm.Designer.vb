@@ -24,9 +24,6 @@ Partial Class SellDetailForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.JMSDataSet2 = New JMS_Project.JMSDataSet2()
-        Me.SELLDETAILSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.SELLDETAILSTableAdapter = New JMS_Project.JMSDataSet2TableAdapters.SELLDETAILSTableAdapter()
         Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ItemNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.QuantityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -36,13 +33,16 @@ Partial Class SellDetailForm
         Me.ChangeAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SellDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SellerNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SELLDETAILSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JMSDataSet2 = New JMS_Project.JMSDataSet2()
+        Me.SELLDETAILSTableAdapter = New JMS_Project.JMSDataSet2TableAdapters.SELLDETAILSTableAdapter()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txt_ItemID = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btn_search = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.JMSDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SELLDETAILSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.JMSDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,6 +50,7 @@ Partial Class SellDetailForm
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Info
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemIDDataGridViewTextBoxColumn, Me.ItemNameDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn, Me.SellRateDataGridViewTextBoxColumn, Me.TotalAmountDataGridViewTextBoxColumn, Me.ReceivedAmountDataGridViewTextBoxColumn, Me.ChangeAmountDataGridViewTextBoxColumn, Me.SellDateDataGridViewTextBoxColumn, Me.SellerNameDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.SELLDETAILSBindingSource
@@ -59,20 +60,6 @@ Partial Class SellDetailForm
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(1508, 378)
         Me.DataGridView1.TabIndex = 0
-        '
-        'JMSDataSet2
-        '
-        Me.JMSDataSet2.DataSetName = "JMSDataSet2"
-        Me.JMSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SELLDETAILSBindingSource
-        '
-        Me.SELLDETAILSBindingSource.DataMember = "SELLDETAILS"
-        Me.SELLDETAILSBindingSource.DataSource = Me.JMSDataSet2
-        '
-        'SELLDETAILSTableAdapter
-        '
-        Me.SELLDETAILSTableAdapter.ClearBeforeFill = True
         '
         'ItemIDDataGridViewTextBoxColumn
         '
@@ -146,6 +133,20 @@ Partial Class SellDetailForm
         Me.SellerNameDataGridViewTextBoxColumn.Name = "SellerNameDataGridViewTextBoxColumn"
         Me.SellerNameDataGridViewTextBoxColumn.Width = 200
         '
+        'SELLDETAILSBindingSource
+        '
+        Me.SELLDETAILSBindingSource.DataMember = "SELLDETAILS"
+        Me.SELLDETAILSBindingSource.DataSource = Me.JMSDataSet2
+        '
+        'JMSDataSet2
+        '
+        Me.JMSDataSet2.DataSetName = "JMSDataSet2"
+        Me.JMSDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SELLDETAILSTableAdapter
+        '
+        Me.SELLDETAILSTableAdapter.ClearBeforeFill = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ScrollBar
@@ -153,11 +154,11 @@ Partial Class SellDetailForm
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.btn_search)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox2.Location = New System.Drawing.Point(516, 430)
+        Me.GroupBox2.Location = New System.Drawing.Point(301, 430)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(411, 232)
+        Me.GroupBox2.Size = New System.Drawing.Size(818, 232)
         Me.GroupBox2.TabIndex = 19
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "SEARCH ITEMS"
@@ -165,7 +166,7 @@ Partial Class SellDetailForm
         'txt_ItemID
         '
         Me.txt_ItemID.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_ItemID.Location = New System.Drawing.Point(146, 105)
+        Me.txt_ItemID.Location = New System.Drawing.Point(345, 86)
         Me.txt_ItemID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_ItemID.Name = "txt_ItemID"
         Me.txt_ItemID.Size = New System.Drawing.Size(250, 30)
@@ -174,7 +175,7 @@ Partial Class SellDetailForm
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(26, 107)
+        Me.Label12.Location = New System.Drawing.Point(225, 88)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(80, 28)
         Me.Label12.TabIndex = 18
@@ -183,7 +184,7 @@ Partial Class SellDetailForm
         'btn_search
         '
         Me.btn_search.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.btn_search.Location = New System.Drawing.Point(111, 168)
+        Me.btn_search.Location = New System.Drawing.Point(310, 149)
         Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(111, 35)
@@ -195,16 +196,17 @@ Partial Class SellDetailForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1532, 682)
+        Me.ClientSize = New System.Drawing.Size(1528, 723)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "SellDetailForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SellDetailForm"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.JMSDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SELLDETAILSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.JMSDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)

@@ -64,11 +64,11 @@ Partial Class ItemViewForm
         Me.GroupBox2.Controls.Add(Me.txt_itemid)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox2.Location = New System.Drawing.Point(435, 397)
+        Me.GroupBox2.Location = New System.Drawing.Point(341, 397)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(562, 211)
+        Me.GroupBox2.Size = New System.Drawing.Size(799, 275)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "VIEW INVENTORY"
@@ -76,7 +76,7 @@ Partial Class ItemViewForm
         'btn_search
         '
         Me.btn_search.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.btn_search.Location = New System.Drawing.Point(222, 132)
+        Me.btn_search.Location = New System.Drawing.Point(330, 138)
         Me.btn_search.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_search.Name = "btn_search"
         Me.btn_search.Size = New System.Drawing.Size(111, 35)
@@ -87,7 +87,7 @@ Partial Class ItemViewForm
         'txt_itemid
         '
         Me.txt_itemid.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.txt_itemid.Location = New System.Drawing.Point(274, 75)
+        Me.txt_itemid.Location = New System.Drawing.Point(382, 81)
         Me.txt_itemid.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_itemid.Name = "txt_itemid"
         Me.txt_itemid.Size = New System.Drawing.Size(250, 30)
@@ -96,7 +96,7 @@ Partial Class ItemViewForm
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(62, 75)
+        Me.Label14.Location = New System.Drawing.Point(170, 81)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(80, 28)
         Me.Label14.TabIndex = 3
@@ -207,7 +207,7 @@ Partial Class ItemViewForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1532, 682)
+        Me.ClientSize = New System.Drawing.Size(1528, 723)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.GroupBox2)

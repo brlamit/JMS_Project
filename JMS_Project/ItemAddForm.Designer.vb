@@ -44,9 +44,6 @@ Partial Class itemaddform
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.JMSDataSet = New JMS_Project.JMSDataSet()
-        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
         Me.ItemIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SupplierNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SAddressDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,6 +53,9 @@ Partial Class itemaddform
         Me.RateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TotalAmountDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BuyDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.JMSDataSet = New JMS_Project.JMSDataSet()
+        Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -283,20 +283,6 @@ Partial Class itemaddform
         Me.DataGridView1.Size = New System.Drawing.Size(1521, 306)
         Me.DataGridView1.TabIndex = 15
         '
-        'JunkDataBindingSource
-        '
-        Me.JunkDataBindingSource.DataMember = "JunkData"
-        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet
-        '
-        'JMSDataSet
-        '
-        Me.JMSDataSet.DataSetName = "JMSDataSet"
-        Me.JMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'JunkDataTableAdapter
-        '
-        Me.JunkDataTableAdapter.ClearBeforeFill = True
-        '
         'ItemIDDataGridViewTextBoxColumn
         '
         Me.ItemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID"
@@ -369,11 +355,25 @@ Partial Class itemaddform
         Me.BuyDateDataGridViewTextBoxColumn.Name = "BuyDateDataGridViewTextBoxColumn"
         Me.BuyDateDataGridViewTextBoxColumn.Width = 200
         '
+        'JunkDataBindingSource
+        '
+        Me.JunkDataBindingSource.DataMember = "JunkData"
+        Me.JunkDataBindingSource.DataSource = Me.JMSDataSet
+        '
+        'JMSDataSet
+        '
+        Me.JMSDataSet.DataSetName = "JMSDataSet"
+        Me.JMSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'JunkDataTableAdapter
+        '
+        Me.JunkDataTableAdapter.ClearBeforeFill = True
+        '
         'itemaddform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1532, 682)
+        Me.ClientSize = New System.Drawing.Size(1528, 723)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label27)
