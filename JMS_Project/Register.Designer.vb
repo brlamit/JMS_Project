@@ -333,6 +333,7 @@ Partial Class register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(480, 600)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.CheckBox_Mpass)
