@@ -35,6 +35,7 @@ Partial Class login
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btn_forgetPass = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -177,6 +178,16 @@ Partial Class login
         Me.PictureBox2.TabIndex = 61
         Me.PictureBox2.TabStop = False
         '
+        'btn_forgetPass
+        '
+        Me.btn_forgetPass.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btn_forgetPass.Location = New System.Drawing.Point(219, 369)
+        Me.btn_forgetPass.Name = "btn_forgetPass"
+        Me.btn_forgetPass.Size = New System.Drawing.Size(146, 28)
+        Me.btn_forgetPass.TabIndex = 61
+        Me.btn_forgetPass.Text = "Forget Password ?"
+        Me.btn_forgetPass.UseVisualStyleBackColor = False
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -184,6 +195,7 @@ Partial Class login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(440, 560)
+        Me.Controls.Add(Me.btn_forgetPass)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Panel2)
@@ -219,4 +231,5 @@ Partial Class login
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btn_forgetPass As Button
 End Class

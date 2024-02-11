@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JMSDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reset-Password.Designer.vb">
+      <DependentUpon>Reset-Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reset-Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SellDetailForm.Designer.vb">
       <DependentUpon>SellDetailForm.vb</DependentUpon>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemViewForm.resx">
       <DependentUpon>ItemViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset-Password.resx">
+      <DependentUpon>Reset-Password.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SellDetailForm.resx">
       <DependentUpon>SellDetailForm.vb</DependentUpon>
