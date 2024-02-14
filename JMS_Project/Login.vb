@@ -58,9 +58,10 @@ Public Class login
 
                     login.SellerName = username
                     ' MessageBox.Show("Authentication successful!")
-                    Me.Hide()
+
                     Dim home As New Dashboard()
                     home.Show()
+                    Me.Dispose()
 
                 Else
                     MessageBox.Show("Authentication failed. Invalid username or password.")
@@ -78,4 +79,10 @@ Public Class login
         ' Replace this with your preferred hashing implementation
         Return password
     End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_forgetPass.Click
+        Dim reset As New Reset_Password
+        reset.Show()
+        Me.Hide()
+    End Sub
 End Class
