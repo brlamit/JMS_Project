@@ -23,7 +23,6 @@ Partial Class ItemSellForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.txt_Camount = New System.Windows.Forms.TextBox()
         Me.txt_Ramount = New System.Windows.Forms.TextBox()
@@ -62,6 +61,7 @@ Partial Class ItemSellForm
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btn_search = New System.Windows.Forms.Button()
         Me.JunkDataTableAdapter = New JMS_Project.JMSDataSet1TableAdapters.JunkDataTableAdapter()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.GroupBox5.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,16 +69,6 @@ Partial Class ItemSellForm
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Segoe UI", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-        Me.Label28.Location = New System.Drawing.Point(646, 330)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(185, 41)
-        Me.Label28.TabIndex = 16
-        Me.Label28.Text = "SALE ITEMS"
         '
         'GroupBox5
         '
@@ -444,14 +434,24 @@ Partial Class ItemSellForm
         '
         Me.JunkDataTableAdapter.ClearBeforeFill = True
         '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+        Me.Label27.Location = New System.Drawing.Point(607, 332)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(195, 35)
+        Me.Label27.TabIndex = 20
+        Me.Label27.Text = "SELL ITEMS"
+        '
         'ItemSellForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1528, 723)
+        Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.DataGridView5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -472,8 +472,6 @@ Partial Class ItemSellForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label28 As Label
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents btn_sell As Button
     Friend WithEvents DataGridView5 As DataGridView
@@ -512,4 +510,5 @@ Partial Class ItemSellForm
     Friend WithEvents RateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TotalAmountDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents BuyDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Label27 As Label
 End Class

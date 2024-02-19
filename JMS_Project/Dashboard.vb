@@ -2,11 +2,11 @@
 
 
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+    'Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
-    End Sub
+    'End Sub
 
-    Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles btn_add.Click
+    Private Sub btn_add_Click(sender As Object, e As EventArgs) Handles MyBase.Load
         itemaddform.TopLevel = False
         Panel2.Controls.Add(itemaddform)
         itemaddform.BringToFront()
@@ -117,5 +117,33 @@
         Panel2.Controls.Add(itemaddform)
         itemaddform.BringToFront()
         itemaddform.Show()
+    End Sub
+
+    Private Sub SelectAllToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SelectAllToolStripMenuItem.Click
+        itemupdateform.TopLevel = False
+        Panel2.Controls.Add(itemupdateform)
+        itemupdateform.BringToFront()
+        itemupdateform.Show()
+    End Sub
+
+    Private Sub DeleteItemsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteItemsToolStripMenuItem.Click
+        ItemDeleteForm.TopLevel = False
+        Panel2.Controls.Add(ItemDeleteForm)
+        ItemDeleteForm.BringToFront()
+        ItemDeleteForm.Show()
+    End Sub
+
+    Private Sub InventoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InventoryToolStripMenuItem.Click
+        ItemViewForm.TopLevel = False
+        Panel2.Controls.Add(ItemViewForm)
+        ItemViewForm.BringToFront()
+        ItemViewForm.Show()
+    End Sub
+
+    Private Sub SellDetailsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SellDetailsToolStripMenuItem.Click
+        SellDetailForm.TopLevel = False
+        Panel2.Controls.Add(SellDetailForm)
+        SellDetailForm.BringToFront()
+        SellDetailForm.Show()
     End Sub
 End Class

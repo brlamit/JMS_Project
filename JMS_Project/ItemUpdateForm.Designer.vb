@@ -277,9 +277,9 @@ Partial Class itemupdateform
         Me.Label27.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
         Me.Label27.Location = New System.Drawing.Point(544, 324)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(350, 35)
+        Me.Label27.Size = New System.Drawing.Size(250, 35)
         Me.Label27.TabIndex = 15
-        Me.Label27.Text = " ITEMS UPDATE FORM"
+        Me.Label27.Text = "UPDATE ITEMS "
         '
         'DataGridView1
         '

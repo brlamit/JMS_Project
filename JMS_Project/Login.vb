@@ -58,10 +58,10 @@ Public Class login
 
                     login.SellerName = username
                     ' MessageBox.Show("Authentication successful!")
-
+                    Me.Dispose()
                     Dim home As New Dashboard()
                     home.Show()
-                    Me.Dispose()
+
 
                 Else
                     MessageBox.Show("Authentication failed. Invalid username or password.")

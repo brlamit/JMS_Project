@@ -23,7 +23,6 @@ Partial Class ItemViewForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.btn_search = New System.Windows.Forms.Button()
         Me.txt_itemid = New System.Windows.Forms.TextBox()
@@ -41,21 +40,12 @@ Partial Class ItemViewForm
         Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JMSDataSet5 = New JMS_Project.JMSDataSet5()
         Me.JunkDataTableAdapter = New JMS_Project.JMSDataSet5TableAdapters.JunkDataTableAdapter()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JMSDataSet5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Segoe UI", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-        Me.Label18.Location = New System.Drawing.Point(593, 330)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(275, 41)
-        Me.Label18.TabIndex = 12
-        Me.Label18.Text = "VIEW INVENTORY"
         '
         'GroupBox2
         '
@@ -203,13 +193,23 @@ Partial Class ItemViewForm
         '
         Me.JunkDataTableAdapter.ClearBeforeFill = True
         '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+        Me.Label27.Location = New System.Drawing.Point(626, 347)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(285, 35)
+        Me.Label27.TabIndex = 14
+        Me.Label27.Text = "VIEW INVENTORY"
+        '
         'ItemViewForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1528, 723)
+        Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.DataGridView2)
-        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ItemViewForm"
@@ -225,8 +225,6 @@ Partial Class ItemViewForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label18 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents btn_search As Button
     Friend WithEvents txt_itemid As TextBox
@@ -244,4 +242,5 @@ Partial Class ItemViewForm
     Friend WithEvents RateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TotalAmountDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents BuyDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Label27 As Label
 End Class

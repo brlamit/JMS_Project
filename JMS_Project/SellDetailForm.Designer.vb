@@ -40,6 +40,7 @@ Partial Class SellDetailForm
         Me.txt_ItemID = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btn_search = New System.Windows.Forms.Button()
+        Me.Label27 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SELLDETAILSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JMSDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -154,7 +155,7 @@ Partial Class SellDetailForm
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.btn_search)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.GroupBox2.Location = New System.Drawing.Point(301, 430)
+        Me.GroupBox2.Location = New System.Drawing.Point(299, 458)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -192,11 +193,22 @@ Partial Class SellDetailForm
         Me.btn_search.Text = "Search"
         Me.btn_search.UseVisualStyleBackColor = False
         '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+        Me.Label27.Location = New System.Drawing.Point(587, 412)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(316, 35)
+        Me.Label27.TabIndex = 20
+        Me.Label27.Text = "VIEW SELL DETAILS"
+        '
         'SellDetailForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1528, 723)
+        Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -210,6 +222,7 @@ Partial Class SellDetailForm
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -230,4 +243,5 @@ Partial Class SellDetailForm
     Friend WithEvents txt_ItemID As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents btn_search As Button
+    Friend WithEvents Label27 As Label
 End Class

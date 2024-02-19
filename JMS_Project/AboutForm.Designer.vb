@@ -40,20 +40,20 @@ Partial Class AboutForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.Label6.Location = New System.Drawing.Point(124, 53)
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(105, 36)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(201, 38)
+        Me.Label6.Size = New System.Drawing.Size(287, 54)
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "About System"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold)
-        Me.Label5.Location = New System.Drawing.Point(124, 246)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(105, 305)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(217, 38)
+        Me.Label5.Size = New System.Drawing.Size(312, 54)
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Team Members"
         '
@@ -61,7 +61,7 @@ Partial Class AboutForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(1201, 602)
+        Me.Label3.Location = New System.Drawing.Point(1191, 670)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(155, 28)
         Me.Label3.TabIndex = 14
@@ -71,7 +71,7 @@ Partial Class AboutForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(693, 602)
+        Me.Label2.Location = New System.Drawing.Point(683, 670)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(154, 28)
         Me.Label2.TabIndex = 13
@@ -81,7 +81,7 @@ Partial Class AboutForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(222, 602)
+        Me.Label1.Location = New System.Drawing.Point(212, 670)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(105, 28)
         Me.Label1.TabIndex = 12
@@ -91,7 +91,7 @@ Partial Class AboutForm
         '
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(1082, 325)
+        Me.PictureBox3.Location = New System.Drawing.Point(1072, 393)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(327, 244)
@@ -102,7 +102,7 @@ Partial Class AboutForm
         '
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(586, 325)
+        Me.PictureBox2.Location = New System.Drawing.Point(576, 393)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(327, 244)
@@ -114,7 +114,7 @@ Partial Class AboutForm
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(124, 325)
+        Me.PictureBox1.Location = New System.Drawing.Point(114, 393)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(327, 244)
@@ -124,10 +124,10 @@ Partial Class AboutForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(126, 109)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(1095, 100)
+        Me.Label4.Size = New System.Drawing.Size(1189, 144)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = resources.GetString("Label4.Text")
         '

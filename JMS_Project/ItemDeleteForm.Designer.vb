@@ -23,7 +23,6 @@ Partial Class ItemDeleteForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label36 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.btn_refresh = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
@@ -42,21 +41,12 @@ Partial Class ItemDeleteForm
         Me.JunkDataBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.JMSDataSet = New JMS_Project.JMSDataSet()
         Me.JunkDataTableAdapter = New JMS_Project.JMSDataSetTableAdapters.JunkDataTableAdapter()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.GroupBox4.SuspendLayout()
         CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JunkDataBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.JMSDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Segoe UI", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-        Me.Label36.Location = New System.Drawing.Point(508, 324)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(315, 41)
-        Me.Label36.TabIndex = 15
-        Me.Label36.Text = "DELETE ITEMS FORM"
         '
         'GroupBox4
         '
@@ -216,12 +206,22 @@ Partial Class ItemDeleteForm
         '
         Me.JunkDataTableAdapter.ClearBeforeFill = True
         '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Times New Roman", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+        Me.Label27.Location = New System.Drawing.Point(543, 337)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(242, 35)
+        Me.Label27.TabIndex = 19
+        Me.Label27.Text = "DELETE ITEMS"
+        '
         'ItemDeleteForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1532, 682)
-        Me.Controls.Add(Me.Label36)
+        Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.DataGridView4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -238,8 +238,6 @@ Partial Class ItemDeleteForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label36 As Label
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents btn_refresh As Button
     Friend WithEvents btn_delete As Button
@@ -258,4 +256,5 @@ Partial Class ItemDeleteForm
     Friend WithEvents RateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents TotalAmountDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents BuyDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents Label27 As Label
 End Class
